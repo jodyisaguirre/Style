@@ -18,12 +18,17 @@ const cards = [
 
 ];
 export default class DeckSwiperExample extends Component {
-  state = {
+
+  nextSlide = () => {
+    alert('sup Son')
+            }
 
 
-  }
+
   render() {
+
     return (
+
       <Container>
         <Header />
         <View>
@@ -56,7 +61,12 @@ export default class DeckSwiperExample extends Component {
                 <CardItem>
                 <Button onPress={()=>Actions.ColdWeatherScreen({ hat: item.image.uri })}>
                 <Text >
-                  Accept
+                  Fire
+                </Text>
+                </Button>
+                <Button onPress={this.nextSlide}>
+                <Text >
+                  Hard Pass
                 </Text>
                 </Button>
                 </CardItem>
