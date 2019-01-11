@@ -18,7 +18,7 @@ export default class HeaderTitleExample extends Component {
 
 
 }
-fetch(){
+componentDidMount(){
   fetch("https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=96942006f211e884ae019e711d2276f8&zip=80203&units=imperial")
   .then(res => res.json())
   .then(res=>{
@@ -42,17 +42,29 @@ fetch(){
                           flex:1,
                           justifyContent: 'center',
                           alignItems: 'center'}}>
-        <Text style={{fontSize: 20,
-                      color: 'white'
-          }}>The Current Temperature is</Text>
-          <Text style={{fontSize: 20,
-                        color: 'white'
-          }}>{this.state.temp}º F</Text>
-          <Text style={{fontSize: 20,
-                        color: 'white',
-          }}>The High will be</Text>
-       <Text style={{fontSize: 20,
+        <Text style={{fontSize: 30,
                       color: 'white',
+                      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                      textShadowOffset: {width: -1, height: 1},
+                      textShadowRadius: 10
+          }}>The Current Temperature is</Text>
+          <Text style={{fontSize: 30,
+                        color: 'white',
+                        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                        textShadowOffset: {width: -1, height: 1},
+                        textShadowRadius: 10
+          }}>{this.state.temp}º F</Text>
+          <Text style={{fontSize: 30,
+                        color: 'white',
+                        textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                        textShadowOffset: {width: -1, height: 1},
+                        textShadowRadius: 10
+          }}>The High will be</Text>
+       <Text style={{fontSize: 30,
+                      color: 'white',
+                      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                      textShadowOffset: {width: -1, height: 1},
+                      textShadowRadius: 10,
        }}>{this.state.temp_max}º F</Text>
        </Container>
     );

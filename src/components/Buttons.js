@@ -29,27 +29,37 @@ export default class Buttons extends Component {
           block style={{color: '#c3c3c3',
           width: '100%',
           backgroundColor:'#929292',
+          marginBottom:25
 
           }}>
             <Text   style={{
-              color:'#2dbeff'
-            }}>Above</Text>
+              fontSize: 30,
+              color:'#2dbeff',
+              textShadowColor: 'rgba(0, 0, 0, 0.75)',
+              textShadowOffset: {width: -1, height: 1},
+              textShadowRadius: 10,
+            }}>Suns Out Guns Out</Text>
           </Button>
-          <Text style={{ fontSize:40
-
-
-          }}>50 degrees</Text>
 
           <Button onPress={()=>Actions.ColdWeatherScreen()}
           block style={{color: '#c3c3c3',
           width: '100%',
           backgroundColor:'#929292',
+          marginTop:25,
+          textShadowColor: 'rgba(0, 0, 0, 0.75)',
+          textShadowOffset: {width: -1, height: 1},
+          textShadowRadius: 10,
 
 
-}}  >
+          }}>
             <Text style={{
-              color:'#2dbeff'
-            }}>Below</Text>
+              fontSize: 30,
+              color:'#2dbeff',
+              textShadowColor: 'rgba(0, 0, 0, 0.75)',
+              textShadowOffset: {width: -1, height: 1},
+              textShadowRadius: 10,
+
+            }}>Winter's Comming</Text>
           </Button>
 
 
