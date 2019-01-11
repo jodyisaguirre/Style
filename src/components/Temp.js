@@ -18,7 +18,7 @@ export default class HeaderTitleExample extends Component {
 
 
 }
-fectch(){
+componentDidMount(){
   fetch("https://api.openweathermap.org/data/2.5/weather?id=524901&APPID=96942006f211e884ae019e711d2276f8&zip=80203&units=imperial")
   .then(res => res.json())
   .then(res=>{

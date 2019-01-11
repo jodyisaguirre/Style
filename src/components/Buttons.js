@@ -35,7 +35,7 @@ export default class Buttons extends Component {
               color:'#2dbeff'
             }}>Above</Text>
           </Button>
-          <Text style={{
+          <Text style={{ fontSize:40
 
 
           }}>50 degrees</Text>

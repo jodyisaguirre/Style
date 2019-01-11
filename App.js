@@ -10,6 +10,10 @@ import HatScreen from './HatScreen'
 import TempPage from './TempPage'
 import JacketScreen from './JacketScreen'
 import AddNew from './AddNew'
+import AddNewPhoto from './AddNewPhoto'
+import EditPhoto from './Edit'
+
+
 
 
 
@@ -32,42 +36,54 @@ export default class App extends React.Component {
           title='Home'
           inital
            />
+
         <Scene
         key='ColdWeatherScreen'
         component={ColdWeatherScreen}
         title='ColdWeather'
-
          />
+
          <Scene
          key='HotWeatherScreen'
          component={HotWeatherScreen}
          title='HotWeather'
-
           />
+
           <Scene
           key='HatScreen'
           component={HatScreen}
           title='Hats'
-
            />
+
            <Scene
            key='TempPage'
            component={TempPage}
            title='Weather'
-
             />
+
             <Scene
             key='JacketScreen'
             component={JacketScreen}
             title='Jackets'
-
              />
+
              <Scene
              key='AddNew'
              component={AddNew}
              title='Add New Item'
-
               />
+
+              <Scene
+              key='AddNewPhoto'
+              component={AddNewPhoto}
+              title='Add New Item Photo'
+               />
+
+               <Scene
+               key='EditPhoto'
+               component={EditPhoto}
+               title='Edit Photo'
+                />
 
          </Scene>
     </Router>
