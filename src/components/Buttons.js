@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Button, Text } from 'native-base';
+import { Container, Header, Content, Button, Text, Icon, Image } from 'native-base';
 import { Actions } from 'react-native-router-flux'
+import FontAwesome, { Icons } from 'react-native-fontawesome';
 
 export default class Buttons extends Component {
 
@@ -25,13 +26,14 @@ export default class Buttons extends Component {
 
                     }}>
 
-          <Button onPress={()=>Actions.HotWeatherScreen()}
+          <Button warning bordered onPress={()=>Actions.HotWeatherScreen()}
           block style={{color: '#c3c3c3',
           width: '100%',
           backgroundColor:'#929292',
           marginBottom:25
 
           }}>
+            <Icon name='home' />
             <Text   style={{
               fontSize: 30,
               color:'#2dbeff',
@@ -41,26 +43,32 @@ export default class Buttons extends Component {
             }}>Suns Out Guns Out</Text>
           </Button>
 
-          <Button onPress={()=>Actions.ColdWeatherScreen()}
+          <Button light bordered onPress={()=>Actions.ColdWeatherScreen()}
           block style={{color: '#c3c3c3',
           width: '100%',
-          backgroundColor:'#929292',
           marginTop:25,
+          backgroundColor:'#929292',
+
           textShadowColor: 'rgba(0, 0, 0, 0.75)',
           textShadowOffset: {width: -1, height: 1},
           textShadowRadius: 10,
-
-
           }}>
+
+
             <Text style={{
               fontSize: 30,
               color:'#2dbeff',
               textShadowColor: 'rgba(0, 0, 0, 0.75)',
               textShadowOffset: {width: -1, height: 1},
               textShadowRadius: 10,
-
-            }}>Winter's Comming</Text>
+            }}>Winter's Coming</Text>
           </Button>
+
+
+
+
+
+
 
 
 
