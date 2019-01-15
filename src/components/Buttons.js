@@ -3,6 +3,7 @@ import { Container, Header, Content, Button, Text, Icon, Image } from 'native-ba
 import { Actions } from 'react-native-router-flux'
 import FontAwesome, { Icons } from 'react-native-fontawesome';
 
+
 export default class Buttons extends Component {
 
 
@@ -33,7 +34,8 @@ export default class Buttons extends Component {
           marginBottom:25
 
           }}>
-            <Icon name='home' />
+            <Icon name='home'
+             />
             <Text   style={{
               fontSize: 30,
               color:'#2dbeff',
@@ -43,7 +45,7 @@ export default class Buttons extends Component {
             }}>Suns Out Guns Out</Text>
           </Button>
 
-          <Button light bordered onPress={()=>Actions.ColdWeatherScreen()}
+          <Button  bordered onPress={()=>Actions.ColdWeatherScreen()}
           block style={{color: '#c3c3c3',
           width: '100%',
           marginTop:25,
@@ -54,6 +56,7 @@ export default class Buttons extends Component {
           textShadowRadius: 10,
           }}>
 
+          <Icon name='home' style={{marginLeft:-15}} />
 
             <Text style={{
               fontSize: 30,

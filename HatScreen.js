@@ -18,9 +18,14 @@ export default class DeckSwiperExample extends Component {
     fetch("http://localhost:3003/clothing")
     .then(res => res.json())
     .then(res=>{
-      this.setState({ clothingsData:res.clothings})
+      return this.setState({ clothingsData:res.clothings})
     })
   }
+
+
+
+
+
 
 
 
@@ -38,6 +43,7 @@ const {clothingsData}= this.state
           {clothingsData.length>0?<DeckSwiper
             dataSource={clothingsData}
             renderItem={item =>
+
               <Card style={{ elevation: 3 }}>
                 <CardItem>
                   <Left>
@@ -48,10 +54,10 @@ const {clothingsData}= this.state
                       <Text onPress={()=>Actions.AddNew()}>
                         Add New
                       </Text>
-                      <Text onPress={()=>Actions.AddNew()}>
+                      <Text onPress={()=>Actions.EditPhoto({hat: item.id})}>
                         Edit
                       </Text>
-                      <Text onPress={()=>alert('Are you sure you want to delete this item ')}>
+                      <Text onPress={()=>Actions.DeletePhoto({hat: item.id})}>
                         Delete </Text>
                          </Body>
                   </Left>
@@ -61,7 +67,7 @@ const {clothingsData}= this.state
 
                 </CardItem>
                 <CardItem>
-                <Button onPress={()=>Actions.ColdWeatherScreen({ hat: item.image.uri })}>
+                <Button onPress={()=>Actions.ColdWeatherScreen({ hat: item.url })}>
                 <Text >
                   Fire
                 </Text>

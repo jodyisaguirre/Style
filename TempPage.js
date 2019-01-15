@@ -10,7 +10,7 @@ import Buttons from './src/components/Buttons.js'
 const Splash = () =>{
 
   return(
-    <ImageBackground source={require('./src/components/background.png')}
+    <ImageBackground source={require('./src/components/topSuit.jpg')}
     style={{
       height:'100%',
       flex:1,

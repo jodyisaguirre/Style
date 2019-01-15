@@ -7,7 +7,7 @@ class ColdWeatherScreen extends Component{
     const hat = this.props.hat || 'https://i.ibb.co/HBHNW7Y/hbutton.png'
   return(
 
-    <ImageBackground source={require('./src/components/background.png')}
+    <ImageBackground source={require('./src/components/topSuit.jpg')}
     style={{
       height:'100%',
       flex:1,
@@ -23,7 +23,7 @@ class ColdWeatherScreen extends Component{
 
         <Text onPress={()=>Actions.HatScreen()}
               style={{fontSize:25,
-                color: 'white',
+                color: '#2dbeff',
                 textShadowColor: 'rgba(0, 0, 0, 0.75)',
                 textShadowOffset: {width: -1, height: 1},
                 textShadowRadius: 10}}>
@@ -41,7 +41,7 @@ class ColdWeatherScreen extends Component{
       }}/>
       <Text onPress={()=>Actions.JacketScreen()}
       style={{fontSize:25,
-        color: 'white',
+        color: '#2dbeff',
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 10}}
@@ -55,7 +55,7 @@ class ColdWeatherScreen extends Component{
       }}/>
       <Text onPress={()=>Actions.ShirtScreen()}
       style={{fontSize:25,
-        color: 'white',
+        color: '#2dbeff',
         textShadowColor: 'rgba(0, 0, 0, 0.75)',
         textShadowOffset: {width: -1, height: 1},
         textShadowRadius: 10}}>
@@ -67,7 +67,7 @@ class ColdWeatherScreen extends Component{
         width:100
       }}/><Text onPress={()=>Actions.PantsScreen()}
                 style={{fontSize:25,
-                        color: 'white',
+                        color: '#2dbeff',
                         textShadowColor: 'rgba(0, 0, 0, 0.75)',
                         textShadowOffset: {width: -1, height: 1},
                         textShadowRadius: 10}}
@@ -81,7 +81,7 @@ class ColdWeatherScreen extends Component{
       }}/>
       <Text onPress={()=>Actions.ShoeScreen()}
             style={{fontSize:25,
-              color: 'white',
+              color: '#2dbeff',
               textShadowColor: 'rgba(0, 0, 0, 0.75)',
               textShadowOffset: {width: -1, height: 1},
               textShadowRadius: 10}}

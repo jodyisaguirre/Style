@@ -12,6 +12,8 @@ import JacketScreen from './JacketScreen'
 import AddNew from './AddNew'
 import AddNewPhoto from './AddNewPhoto'
 import EditPhoto from './Edit'
+import DeletePhoto from './DeletePhoto'
+
 
 
 
@@ -84,6 +86,11 @@ export default class App extends React.Component {
                component={EditPhoto}
                title='Edit Photo'
                 />
+                <Scene
+                key='DeletePhoto'
+                component={DeletePhoto}
+                title='Delete Photo'
+                 />
 
          </Scene>
     </Router>
